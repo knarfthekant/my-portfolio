@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+header {
+    height: 100vh;
+    padding-top: 7rem;
+}
+
+.header_container {
+    height: 100%;
+    position: relative;
+}
+
+/* profilepic settings */
+.profilepic {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 26rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 6rem 6rem 0 0;
+    overflow: hidden;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* scaling internal image */
+.profilepic img {
+  width: 90%;
+  height: 90%;
+  margin-right: 0.5rem;
+  margin-bottom: 5rem;
+  object-fit: contain;
+}
+
+.cv {
+    @apply text-orange-400 hover:bg-white hover:border-white
+           hover:text-black border-1 border-solid border-orange-400 rounded px-2 
+           ease-linear duration-200
+}
+
+.socials {
+    @apply text-orange-400;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 6em;
+    bottom: 3rem;
+}
+
+.socials::after {
+    background: var(--color-primary);
+    color: var(--color-primary);
+    width: 1px;
+    height: 2rem;
+    
+}
+

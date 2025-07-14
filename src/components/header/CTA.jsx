@@ -2,8 +2,9 @@ import CV from '../../assets/Frank_Shan_Resume.pdf';
 
 const CTA = () => {
     return (
-        <div className="cta">
-            <a href={CV} download>Download CV</a>
+        <div className="mt-4">
+            <a href={CV} className="cv" download>
+                Download CV</a>
         </div>
     )
 }
