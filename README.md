@@ -1,12 +1,39 @@
-# React + Vite
+# Frank Shan — Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site showcases my projects, background, and skills in a modern, elegant, and interactive way.
 
-Currently, two official plugins are available:
+## **Tech Stack**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### **Frontend**
 
-## Expanding the ESLint configuration
+- **React** — Modern JavaScript library for building dynamic, component-based user interfaces.
+- **Vite** — Next-generation frontend build tool that provides fast dev server startup and lightning-fast hot module replacement (HMR).
+- **Tailwind CSS** — Utility-first CSS framework for rapid UI development, enabling clean, responsive, and customizable designs.
+- **Framer Motion** — Powerful animation library for React that brings smooth, declarative animations and transitions to life.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **Runtime**
+
+- **Node.js** — JavaScript runtime environment that powers the development tooling and package management (via npm).
+
+## **Features**
+
+- Animated name typing effect on load
+- Smooth image and section transitions with Framer Motion
+- Fully responsive design built with Tailwind CSS utilities
+- Clear, modular component architecture using React
+- Lightning-fast local development and builds with Vite
+
+## **Getting Started**
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
