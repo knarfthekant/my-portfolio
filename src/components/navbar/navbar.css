@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* NavBar.css */
+.navbar {
+    @apply bg-white/80 justify-evenly fixed top-8 left-1/2 transform 
+    -translate-x-1/2 backdrop-blur-md rounded-full flex gap-6 items-center;
+    padding: 0.75rem 1.5rem;
+}
+
+.active {
+    @apply font-bold font-stretch-expanded;
+}
+
+@keyframes stretchBounce {
+  0% {
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scaleX(1.1);
+  }
+  60% {
+    transform: scaleX(0.95);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.navbar.animate {
+  animation: stretchBounce 0.5s ease;
+}

@@ -1,13 +1,7 @@
 @import "tailwindcss";
 
 header {
-    height: 100vh;
-    padding-top: 7rem;
-}
-
-.header_container {
-    height: 100%;
-    position: relative;
+    align-items: center;
 }
 
 /* profilepic settings */
@@ -40,24 +34,3 @@ header {
            hover:text-black border-1 border-solid border-orange-400 rounded px-2 
            ease-linear duration-200
 }
-
-.socials {
-    @apply text-orange-400;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 6em;
-    bottom: 3rem;
-}
-
-.socials::after {
-    background: var(--color-primary);
-    color: var(--color-primary);
-    width: 1px;
-    height: 2rem;
-    
-}
-

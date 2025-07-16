@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.border-underline {
+  position: relative;            /* establish containing block */
+  border: none;                  /* remove default border */
+  background: transparent;       /* keep BG clear */
+  padding-bottom: 0.75rem;       /* space for the underline */
+  color: #252628;                /* darker text */
+  outline: none;                 /* we’ll handle focus styles ourselves */
+}
+
+/* the animated underline */
+.border-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    theme("colors.sky.400"),
+    theme("colors.sky.600")
+  );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* on focus (and hover, if desired), grow the line */
+.border-underline:focus::after,
+.border-underline:hover::after {
+  transform: scaleX(1);
+}
